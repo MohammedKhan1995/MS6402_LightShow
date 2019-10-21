@@ -20,14 +20,7 @@ public class ASL_2D_Projectile : MonoBehaviour
         // Set Velocity to move fowards at the speed defined above
         rb_projectile.velocity = transform.InverseTransformDirection(Vector2.right) * fl_speed;
 
-        void OnTriggerEnter(Collider collider )
-        {
-            if (Collider2D.gameObject.tag != st_no_effect_tag)
-            {
-
-                Destroy(gameObject);
-            }
-        }
+        void OnTriggerEnter(Collider collider) => Destroy(gameObject);
 
 
     }

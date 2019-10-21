@@ -1,7 +1,7 @@
 ﻿using System;
 using UnityEngine;
 
-public class NewBehaviourScript1 : MonoBehaviour
+public class  CameramouseFollow : MonoBehaviour
 {
     private Vector3 _target;
     public Camera Camera;

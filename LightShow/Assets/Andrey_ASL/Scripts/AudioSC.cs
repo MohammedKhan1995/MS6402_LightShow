@@ -8,7 +8,7 @@ public class AudioSC : MonoBehaviour
     public float num;
     public GameObject trigger;
     public AudioSource audioSource;
-    public AudioClip audioClip, audioclip2, audioclip3, audioclip4;
+    public AudioClip audioClip;
 
     void OnTriggerEnter(Collider collider)
     {

@@ -1,9 +1,4 @@
-﻿//-------------------------------------------------------
-// Simple 2D Pc Movement
-// Andrey Santana, Uel, Games, 2017
-//-------------------------------------------------------
-using System.Collections;
-using System.Collections.Generic;
+﻿
 using UnityEngine;
 
 public class ASL_PC_Simple_Move : MonoBehaviour
@@ -29,8 +24,8 @@ public class ASL_PC_Simple_Move : MonoBehaviour
         // Calculate the velocity vector based on player input
         v2_velocity = new Vector2(Input.GetAxis("Horizontal"), Input.GetAxis("Vertical")) * Time.deltaTime * fl_PC_speed;
 
-        // update the position of the PC using the velocity vector
+        
         rb_PC.MovePosition(rb_PC.position + v2_velocity);
         
-    }//----
-    }//===================
+    }
+    }

@@ -12,6 +12,8 @@ public class ASL_PC_Range_Attack : MonoBehaviour
     public bool bl_infinite_ammo = true;
     public float fl_cool_down_ = 1F;
     private float fl_next_shoot_time;
+    public AudioSource audioSource;
+    public AudioClip audioClip;
 
     //------------------------------------------
     //Update is called once per frame
@@ -33,7 +35,14 @@ public class ASL_PC_Range_Attack : MonoBehaviour
 
                 // Create a bullet 1 at unit in front of the PC
                 Instantiate(go_projectile, transform.position + transform.TransformDirection(Vector2.right), transform.rotation);
-             }
+
+                audioSource.clip = audioClip;
+                audioSource.Play();
+            }
+                         
+            
+                    
+                
              else if (in_ammo > 0)
             {
                 /// Create a bullet 1 unit in front of the PC
